@@ -13,3 +13,6 @@ def contact(request):
 
 def login(request):
     return render(request , 'core/login.html')
+
+def cart(request):
+    return render(request , 'core/cart.html')

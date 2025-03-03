@@ -1,0 +1,19 @@
+{% load static %}
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ product.name }}</title>
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+</head>
+<body>
+    <div class="product-detail">
+        <h2>{{ product.name }}</h2>
+        <img src="{{ product.image.url }}" alt="{{ product.name }}">
+        <p>Price: ${{ product.price }}</p>
+        <p>{{ product.description }}</p>
+        <button>Add to Cart</button>
+    </div>
+</body>
+</html>

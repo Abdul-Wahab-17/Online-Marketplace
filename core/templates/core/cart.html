@@ -1,0 +1,22 @@
+{% load static %}
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+</head>
+<body>
+    <div class="cart-container">
+        <h2>Your Cart</h2>
+        <ul>
+            {% for item in cart_items %}
+                <li>{{ item.product.name }} - ${{ item.product.price }}</li>
+            {% empty %}
+                <p>Your cart is empty.</p>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

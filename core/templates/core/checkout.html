@@ -1,0 +1,21 @@
+{% load static %}
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+</head>
+<body>
+    <div class="checkout-container">
+        <h2>Checkout</h2>
+        <form method="post">
+            {% csrf_token %}
+            <label for="address">Shipping Address:</label>
+            <input type="text" id="address" name="address" required>
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+</body>
+</html>
