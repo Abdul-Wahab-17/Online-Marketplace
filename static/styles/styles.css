@@ -152,3 +152,71 @@ body {
     background-color: #333;
     color: #fff;
 }
+
+/* Login Page */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 5rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label {
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.login-container button {
+    padding: 0.75rem;
+    border: none;
+    background-color: #f0a500;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #d48806;
+}
+
+.login-container p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.login-container a {
+    color: #f0a500;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
